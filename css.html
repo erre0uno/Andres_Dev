@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Página Con Bootstrap </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+        <div class="container-fluid justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/mascara.jpg" alt="Logo" style="width:48px;height:45px;"
+                            class="rounded-pill">
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="boostrap.html">Html+Bootstrap</a>
+                </li>
+                <li class="nav-item">   
+                    <a class="nav-link" href="css.html">Css</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="blog.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </nav>    <header>
+        <div id="gradiente_fondo"  style="height:50px;">
+            <div class="container-fluid" >
+                <p>CSS </p> 
+            </div>
+        </div>
+    </header>
+
+    <div class="container"> 
+        <div id="selectores">
+            <div class="card tarjetas">
+                <div class="card-body">
+                    <div class="row">
+                        <h6>SELECTORES</h6>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card tarjetas">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4">
+                            <p>p.clase_nombre { <br> color: blue;<br> } 
+                            </p>
+                        </div>
+                        <div class="col-8">
+                            <p>SELECTOR ELEMENTO-CLASE seleciona los parrafos que tengan la clase clase_nombre </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card tarjetas">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4">
+                            <p>#titulo_id { <br> color: blue;<br> } 
+                            </p>
+                        </div>
+                        <div class="col-8">
+                            <p>para un ID </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card tarjetas">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4">
+                            <p>clase_nombre { <br> color: blue;<br> } 
+                            </p>
+                        </div>
+                        <div class="col-8">
+                            <p>para una CLASE </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card tarjetas">
+                <div class="card-body">
+                    <div class="row">
+                        <h6>SELECTORES MULTIPLES</h6>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="card tarjetas">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4">
+                            <p>p.clase_nombre { <br> color: blue;<br> } 
+                            </p>
+                        </div>
+                        <div class="col-8">
+                            <p>SELECTOR ELEMENTO-CLASE seleciona los parrafos que tengan la clase clase_nombre </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card tarjetas">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4">
+                            <p>div p { <br> color: blue;<br> } 
+                            </p>
+                        </div>
+                        <div class="col-8">
+                            <p>SELECTOR ELEMENTO-  SUB-ELEMENTO  seleciona todods los parrafos contenidos dentro del DIV</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card tarjetas">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4">
+                            <p>div p, div p { <br> color: blue;<br> } 
+                            </p>
+                        </div>
+                        <div class="col-8">
+                            <p>SELECTOR ELEMENTO-SUB-ELEMENTO (X2)
+                                seleciona todos los Parrafos y los H1 contenidos dentro del DIV</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card tarjetas">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4">
+                            <p>* { <br> font-family: 'Times New Roman', Times, serif;<br> } 
+                            </p>
+                        </div>
+                        <div class="col-8">
+                            <p>SELECTOR UNIVERSAL *atributo seleciona todos atributos menos los que ya tiene definido un estilo 
+                                y se lo aplica por defecto</p>
+                            <p>asigna la fuente a todos los elemntos menoslos que tengan definida una fuente distinta</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="elementos">
+            <div class="card tarjetas">
+                <div class="card-body">
+                    <div class="row">
+                        <h6>ELEMENTOS MAS USADOS</h6>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card tarjetas">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4">
+                            <h6>Color:</h6>
+                            <p>Color: names, or RGB, HEX, </p>
+                            <p>Color : #000</p>
+                        </div>
+                        <div class="col-8">
+                            <p>Hello, world! Lorem   dolor sit amet consectetur adipisicing  elit.Minima 
+                            repudiandae quo vitae cupiditate  Salto de linea con BR  omnis </p>
+                            <a href="https://www.w3schools.com/Css/css_colors.asp">Lista de colores por nombre</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card tarjetas">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>Background:</h6>
+                                <p>background-color: green;opacity: 0.3;</p>
+                                <p>background: rgba(0, 128, 0, 0.3) </p><p> /* Green background with 30% opacity */</p>
+                            </div>
+                            <div class="col-8">
+                                <ul>
+                                    <li>background-color:#ffffff;</li>
+                                    <li>background-image:url("paper.gif-jpg-png");</li>
+                                    <li>background-repeat:repeat-x;repeat-y;no-repeat;</li>
+                                    <li>background-attachment:fixed;scroll;</li>
+                                    <li>background-position:right top;</li>
+                                    <li>background        </li>
+                                    <p> background-color: #ffffff;</p>
+                                    <p> background-image: url("img_tree.png");</p>
+                                    <p> background-repeat: no-repeat;</p>
+                                    <p> background-position: right top;left-right-top-center-botton</p>
+                                    <hr>
+                                    <p> background-size: ancho|alto -auto-*cover(redimenciona)-contain; permite redimencionar la imagen de fondo aplicadada por bg-imagen:</p>
+                                    <p> height: 200px</p>
+                                    <p>**all: background: #000 url(img/ima.jpg) repeat-x center bottom /100px 100px;</p>
+                                    <p>** luego: background-size: 100px 100px;</p>
+                                </ul>   
+                                <a href="https://www.w3schools.com/Css/css_background.asp">Lista de colores por nombre</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card tarjetas">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4">
+                            <h6>Border:</h6>
+                            <p>border-style: 2px  **solid #ffffff;</p>
+                            <p>border-left: 6px solid red; </p>
+                            <p>border-width: 5px;thick;medium;</p>
+                            <hr>
+                            <h6>border-radius:</h6>
+                            <p>border: 2px solid red; </p>
+                            <p>border-radius: 5px;</p>
+                        </div>
+                        <div class="col-8">
+                            <p>styles:</p>
+                            <p>dotted-dashed-solid-double-groove-ridge-inset-outset-none-hidden </p>
+                            <p>side:</p>
+                            <p> border-top-style: dotted; </p>
+                            <p> border-right-style: solid; </p>
+                            <p> border-bottom-style: dotted; </p>
+                            <p> border-left-style: solid; </p>
+                            <a href="https://www.w3schools.com/Css/css_border.asp">Lista de colores por nombre</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card tarjetas">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4">
+                            <h6>Margin:</h6>
+                            <p> margin-top </p>
+                            <p> margin-right </p>
+                            <p> margin-bottom </p>
+                            <p> margin-left </p>
+                        </div>
+                        <div class="col-8">
+                            <p>styles:</p>
+                            <p> margin: top -right -bottom -left;</p>
+                            <p> margin: 25px 50px 75px 100px;</p>
+                            <p> margin: 25px 50px ; (arriba-abajo) (derecha-izquierda) </p>
+                            <p> margin: 25px ; arriba-abajo-derecha-izquierda </p>
+                            <a href="https://www.w3schools.com/Css/css_border.asp">Lista de colores por nombre</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card tarjetas">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4">
+                            <h6>Padding:</h6>
+                            <p> padding-top </p>
+                            <p> padding-right </p>
+                            <p> padding-bottom </p>
+                            <p> padding-left </p>
+                        </div>
+                        <div class="col-8">
+                            <p>styles:</p>
+                            <p> padding: top -right -bottom -left;</p>
+                            <p> padding: 25px 50px 75px 100px;</p>
+                            <p> padding: 25px 50px ; (arriba-abajo) (derecha-izquierda) </p>
+                            <p> padding: 25px ; arriba-abajo-derecha-izquierda </p>
+                            <a href="https://www.w3schools.com/Css/css_border.asp">Lista de colores por nombre</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card tarjetas">
+                <div class="card-body">
+                    <div class="row">
+                        <h6>Overflow:</h6>
+                        <p> cuando un texto o elemento se sale del elemento contenedor </p>
+                        <p> Overflow:visible; por defecto </p>
+                        <p> Overflow:hidden; lo oculta o corta para que no se pase</p>
+                        <p> Overflow:scroll; añade barras para moverse y ver el contenido </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="textos">
+
+            <div class="card tarjetas">
+                <div class="card-body">
+                    <div class="row">
+                        <h6>TEXTOS</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card tarjetas">
+                <div class="card-body">
+                    <div class="row">
+                        <h6>Texto o fuentes:</h6>
+                        <p> text-align: center; left-right; justify;</p>
+                        <p> text-decoration: none; underline;overline;line-through;overline underline</p>
+                        <p> text-shadow: 2px 2px;x-y</p>
+                        <p> text-shadow: 2px 2px red;x-y-color_sombra</p>
+                        <p> text-shadow: 2px 2px 5px red;x-y-blur(difuminado)-color_sombra</p>
+                        <hr>
+                        <p> font-family: 'Times New Roman', Times, serif;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card tarjetas">
+                <div class="card-body">
+                    <div class="row">
+                        <h6>Lick:</h6>
+                        <p> a:link{ color:red; } lick-pordefecto</p>
+                        <p> a:visited{ color:gray; } lick-visitado/p>
+                        <p> a:hover{ color:yellow; } lick-enfocado</p>
+                        <p> a:active{ color:orenge; } lick-activo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card tarjetas">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <h6>Listas: </h6>
+                            <p> list-style-type: circle; </p>
+                            <ul style="list-style-type: circle;" > <li>Lista</li> </ul>
+                            <p> list-style-type: square; </p>
+                            <ul style="list-style-type: square;" > <li>Lista</li> </ul>
+                            <h6>Listas ordenadas:</h6>
+                            <p> list-style-type: upper-roman; </p>
+                            <ul style="list-style-type: upper-roman;" > <li>Lista</li> <li>Lista</li> </ul>
+                            <p> list-style-type: lower-alpha; </p>
+                            <ul style="list-style-type: lower-alpha;" > <li>Lista</li> <li>Lista</li> </ul>
+                        </div>
+                        <div class="col-6">
+                            <h6>Listas: </h6>
+                            <p> list-style-image: url("img/su.jpg") circle; con imagen </p>
+                            <p> list-style-position: outside; inside; posicion del adorno </p>
+                            <p> list-style-type: none; remueve el adorno </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card tarjetas">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-3">
+                            <h6>Tablas: </h6>
+                            <table>
+                                <tr>
+                                  <th>Firstname</th>
+                                  <th>Lastname</th>
+                                </tr>
+                                <tr>
+                                  <td>Peter</td>
+                                  <td>Griffin</td>
+                                </tr>
+                                <tr>
+                                  <td>Lois</td>
+                                  <td>Griffin</td>
+                                </tr>
+                              </table>
+                        </div>
+                        <div class="col-9">
+                            <h6>Tablas: </h6>
+                            <p> table, th ,td { list-style-type: lower-alpha;} Bordes doble tabla </p>
+                            <p> table { width: 100%; } ocupa todo el ancho del contenedor </p>
+                            <p> th,td { border-collapse: collapse; } Borde simple</p>
+                            <p> th,td { padding: 2px; } asigna padding </p>
+                            <p> th { background-color: red; } asigna color fondo encabezado </p>
+                            <p> th { color: yellow; } asigna color texto encabezado </p>
+                            <p> th { text-align: left; } alinea texto </p>
+                            <p> tr:hover { background-color: gray; } al enfocar la celdas cambian de color su fondo</p>
+                            <hr>
+                            <p> tr:nth-child(ever) { background-color: #151515; } cambia las propiedades a la filas impares</p>
+                            <p> tr:nth-child(ever) { background-color: #303030; } cambia las propiedades a la filas pares</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card tarjetas">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <h6>Display: </h6>
+                            <p> *p = Elemento </p>
+                            <p> *p { display: block;} usa todo el ancho del contenedor(toda linea)</p>
+                            <p> *p { display: inline;} usa solo el ancho del elemento (en misma linea)</p>
+                            <p> *p { display: inline;} por defecto ** | span | link | img |</p>
+                            <hr>
+                            <p> *p { display: none ;} oculta el elemento </p>
+                            <p> *p { visibility: hidden ;} oculta el elemento </p>
+                            <hr>
+                            <p> *p { max-width: 200px ;} asigna el ancho maximo de un elemento </p>
+                            <p> *p { max-height: 200px ;} asigna el alto maximo de un elemento </p>
+                        </div>
+                        <div class="col-6">
+                            <h6>Position: </h6>
+                            <p> *p = Elemento </p>
+                            <p> *p { position: static;} posición por defecto de  los elementos </p> <hr>
+                            <p> *p { position: relative;} posición desde donde deberia estar posicionado </p>
+                            <p> *p { left:20px; } mas 20px a la izquierda </p> <hr>
+                            <p> *p { position: fixed;} posición respecto a la ventana donde se visualiza en el navegador </p>
+                            <p> *p { left:20px; } mas 20px a la izquierda </p> <hr>
+                            <p> *p { position: absolute;} posición respecto a elemento padre donde se visualiza en el navegador </p>
+                            <p> *p { left:20px; } mas 20px a la izquierda </p> <hr>
+                            <p> *p { position: sticky;} posición respecto un elemento y a la ventana donde se visualiza en el navegador </p>
+                            <p> *p { left:20px; top:10 px } mas 20px a la izquierda 10px arriba; se muestra normal pero  si hacemos scroll  </p> <hr>
+                            <p> despues de que lo pase se **anclara o quedara enganchado como el fixed  cuando se sobrepasa su posicion <p> <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card tarjetas">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <h6>Otros elementos de posición: </h6>
+                            <p> Position: absolute !! : posicionar texto en imagenes: </p><a href="https://www.w3schools.com/Css/css_positioning.asp"> ir </a>
+                            <p> *p = Elemento </p>
+                            <p> *p { float: letf; width:100 px }  flota la posición respecto al contenedor deonde est ej div; </p>
+                            <p> *p { float: right; width:100 px }  flota la posición respecto al contenedor deonde est ej div; </p>
+                            <p> *tambien podemos asignar un ancho y alto para el elemento  </p>
+
+                        </div>
+                        <div class="col-6">
+                            <h6>Display: </h6>
+                            <p> *p = Elemento </p>
+                            <p> *p { display: inline-block ;} **permite asignarle al elemento la propiedad height y width </p> 
+                            <p> **Usado en los menu (horizontales)  para alinearlos y ponerles un tamaño fijo </p>
+                            <div>
+                                <p>ejemplo</p>
+                                <hr>
+                                <p style="display:inline-block; height:20px; width:33%; border:1px solid red;">centrado</p>
+                                <p style="display:inline-block; height:20px; width:33%; border:1px solid red;">centrado</p>
+                                <p style="display:inline-block; height:20px; width:32%; border:1px solid red;">centrado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card tarjetas">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <h6>Centrado de elementos horizontal: </h6>
+                            <p> 1- debe tener un ancho menor a 100% del contenedor </p>
+                            <p> 2- añadir un margen *0 vertical y *auto en horizontal </p>
+                            <p> 3- si hay texto adento del elemento **centramos el texto **text-align: center; </p>
+                            <div> <p style="width:100px; margin: 0 auto; background-color:chartreuse; ">ejemplo</p>  </div>
+                            <div> <p style="width:100px; margin: 0 auto; background-color:chartreuse; text-align:center; ">ejemplo</p>  </div>
+                            <hr>
+                            <p> style: </p>
+                            <p> style="width:100px; margin: 0 auto; background-color:chartreuse; " </p>
+                            <p> style="width:100px; margin: 0 auto; background-color:chartreuse; text-align:center; " </p>  
+                        </div>
+                        <div class="col-6">
+                            <h6>Centrado de elementos vertical:</h6>
+                            <p> 1- Los pasos anteriores mas :
+                            <p> 2 lo antrerior pero: sin alto **height + **padding-solo-vertical</p>
+                            <p> 3* el valor del **padding debe ser similar al alto del contenedor/2 casi la mitad </p>
+                            <p> 3* si el contenedor no tiene altura el padding*2 sera la altura del este ! </p> <hr>
+                            <div style="background-color:aqua;"> 
+                                <p style="padding:100px 0; margin: 0 auto; background-color: rgb(15,15,15,0.5); text-align:center;">ejemplo</p>  
+                            </div>
+                            <p> style: </p>
+                            <p> style="padding:100px 0; margin: 0 auto; rgb(15,15,15,0.5); text-align:center; " </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>        
+
+        <footer>
+            <a href="#titulo">Ir al la id=titulo</a>
+            <br>
+            <a href="mailto:nel.andres01@gmail.com">Enviame una Saludo</a>
+            <br>
+            <p>Copyright 2022</p>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        </footer>
+    </div>
+  </body>
+
+</html>

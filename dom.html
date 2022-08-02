@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/dom.css">
+    <!-- ThemeStyles MONOKAIDARK -->
+    <link rel="stylesheet" href="./lib/cspsh/Source/ThemeStyles/MONOKAIDARK.css" >
+    <!-- Font Neon -->
+    <link async href="https://fonts.googleapis.com/css?family=Warnes" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/> 
+
+  </head>
+<body>
+  <header class="header navbar navbar-expand-lg bg-light navbar-sticky">
+    <div class="container px-3">
+      <a href="index.html" class="navbar-brand pe-3">
+        <img src="./img/logo.png" width="47" alt="Silicon">evelopment
+      </a>
+      <div id="navbarNav" class="offcanvas offcanvas-end">
+        <div class="offcanvas-header border-bottom">
+          <h5 class="offcanvas-title">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Devweb</a>
+              <div class="dropdown-menu p-0">
+                <div class="d-lg-flex">
+                  <div class="mega-dropdown-column bg-position-center bg-repeat-0 bg-size-cover rounded-3 rounded-end-0" style="background-image: url(assets/img/landings.jpg); margin: -1px;"></div>
+                  <div class="mega-dropdown-column pt-lg-3 pb-lg-4">
+                    <ul class="list-unstyled mb-0">
+                      <li><a href="#" class="dropdown-item">Template Intro Page</a></li>
+                      <li><a href="boostrap.html" class="dropdown-item">Html</a></li>
+                      <li><a href="css.html" class="dropdown-item">Css</a></li>
+                      <li><a href="javascript.html" class="dropdown-item">JavaScript</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-dropdown-column pt-lg-3 pb-lg-4">
+                    <ul class="list-unstyled mb-0">
+                      <li><a href="#" class="dropdown-item">Medical</a></li>
+                      <li><a href="blog.html" class="dropdown-item">Blog</a></li>
+                      <li><a href="#" class="dropdown-item">Conference</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Lenguages</a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">C++</a></li>
+                <li><a href="#" class="dropdown-item">Funtional Procediment</a></li>
+                <li><a href="#" class="dropdown-item">Java</a></li>
+                <li><a href="#" class="dropdown-item">Python</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a  href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+              <div class="dropdown-menu">
+                <div class="d-lg-flex pt-lg-3">
+                  <div class="mega-dropdown-column">
+                    <h6 class="px-3 mb-2">About</h6>
+                    <ul class="list-unstyled mb-3">
+                      <li><a href="#" class="dropdown-item py-1">About v.1</a></li>
+                      <li><a href="#" class="dropdown-item py-1">About v.2</a></li>
+                    </ul>
+                    <h6 class="px-3 mb-2">Blog</h6>
+                    <ul class="list-unstyled mb-3">
+                      <li><a href="#" class="dropdown-item py-1">List View with Sidebar</a></li>
+                      <li><a href="#" class="dropdown-item py-1">Grid View with Sidebar</a></li>
+                      <li><a href="#" class="dropdown-item py-1">List View no Sidebar</a></li>
+                      <li><a href="#" class="dropdown-item py-1">Grid View no Sidebar</a></li>
+                      <li><a href="#" class="dropdown-item py-1">Simple Feed</a></li>
+                      <li><a href="#" class="dropdown-item py-1">Single Post</a></li>
+                      <li><a href="#" class="dropdown-item py-1">Podcast</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-dropdown-column">
+                    <h6 class="px-3 mb-2">Portfolio</h6>
+                    <ul class="list-unstyled mb-3">
+                      <li><a href="#" class="dropdown-item py-1">Grid View</a></li>
+                      <li><a href="#" class="dropdown-item py-1">List View</a></li>
+                      <li><a href="#" class="dropdown-item py-1">Slider View</a></li>
+                      <li><a href="#" class="dropdown-item py-1">Courses</a></li>
+                      <li><a href="#" class="dropdown-item py-1">Single Project</a></li>
+                      <li><a href="#" class="dropdown-item py-1">Single Course</a></li>
+                    </ul>
+                    <h6 class="px-3 mb-2">Services</h6>
+                    <ul class="list-unstyled mb-3">
+                      <li><a href="#" class="dropdown-item py-1">Services v.1</a></li>
+                      <li><a href="#" class="dropdown-item py-1">Services v.2</a></li>
+                      <li><a href="#" class="dropdown-item py-1">Service Details v.1</a></li>
+                      <li><a href="#" class="dropdown-item py-1">Service Details v.2</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-dropdown-column">
+                    <h6 class="px-3 mb-2">Pricing</h6>
+                    <ul class="list-unstyled mb-3">
+                      <li><a href="#" class="dropdown-item py-1">Pricing Page</a></li>
+                    </ul>
+                    <h6 class="px-3 mb-2">Contacts</h6>
+                    <ul class="list-unstyled mb-3">
+                      <li><a href="#" class="dropdown-item py-1">Contacts v.1</a></li>
+                      <li><a href="#" class="dropdown-item py-1">Contacts v.2</a></li>
+                      <li><a href="#" class="dropdown-item py-1">Contacts v.3</a></li>
+                    </ul>
+                    <h6 class="px-3 mb-2">Specialty</h6>
+                    <ul class="list-unstyled">
+                      <li><a href="#" class="dropdown-item py-1">404 Error v.1</a></li>
+                      <li><a href="#" class="dropdown-item py-1">404 Error v.2</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">UI Kit</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Docs</a>
+            </li>
+          </ul>
+        </div>
+        <div class="offcanvas-header border-top">
+          <a href="#" class="btn btn-primary w-100" target="_blank" rel="noopener">
+            <i class="bx bx-cart fs-4 lh-1 me-1"></i>
+            &nbsp;Buy now
+          </a>
+        </div>      
+      </div>
+      <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
+        <input type="checkbox" class="form-check-input" id="theme-mode">
+        <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+        <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+      </div>
+      <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="#" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" target="_blank" rel="noopener">
+        <i class="bx bx-cart fs-5 lh-1 me-1"></i>
+        &nbsp;Buy now
+      </a>
+    </div>
+  </header>
+
+  <div id="tarjetas" class="container">
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-12 col-md-6 col-lg-6 card-black">
+                <div class="cb-barra"><span class="circle-red"></span><span class="circle-yellow"></span><span class="circle-green"></span></div>
+                <div class="cb-conten" style="min-height:300px;">
+                    <h5 id="neon" class="neon"> Texto neon <br> Hola Mundo </h5> 
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 card-black">
+                <div class="cb-barra"><span class="circle-red"></span><span class="circle-yellow"></span><span class="circle-green"></span></div>
+                <div class="cb-conten">
+                  <form  id="" action="" class="card-body">
+                    <div class="mb-3 mt-3">
+                      <textarea type="text" class="form-control" id="textNeon" rows="5" >Ingresa aquí texto para gerenar tu cartel </textarea>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-primary" onclick='neon()'>Generar Texto</button>
+                    <button type="button" class="btn btn-sm btn-primary" onclick='limpiarNeon()'>Limpiar</button>
+                    <br>
+                  </form>
+                </div>  
+            </div>
+            </div>
+        </div>
+    </div>        
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-12 col-md-6 col-lg-6 card-black">
+                <div class="cb-barra"><span class="circle-red"></span><span class="circle-yellow"></span><span class="circle-green"></span></div>
+                <div class="cb-conten">
+                <h5 class="h5-titulo">JAVA SCRIPT DOM</h5>
+                <p>El dom nos permite manipular elementos html del documento, cambiar y modificar sus etiquetas , sus atributos , estilos y demás.</p>
+                <p> cambiar sus algunos metodos perimten filtrar por id, clase, y etiqueta otros solo de una de las tres.</p>
+                <p>document.querySelector( ); _>>_  tag | class | id </p>
+                <p>document.getElementById( ); _>>_ id </p>
+                <button type="button" class="btn btn-primary btn-sm" onclick='tituloRed()'>titulo red</button> &nbsp;&nbsp;
+                <button type="button" class="btn btn-primary btn-sm" onclick='tituloBlue()'>titulo blue</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 card-black">
+                <div class="cb-barra"><span class="circle-red"></span><span class="circle-yellow"></span><span class="circle-green"></span></div>
+                <div class="cb-conten">
+                <h5>document.querySelector( )</h5>
+                <p>document.querySelector('h3')<br>// retorna primera etiqueta 'h3' del documento</p>
+                <p>document.querySelector('.clase')<br>// retorna la etiqueta con nombre de la .clase</p>
+                <p>document.querySelector('#id')<br>// retorna la etiqueta con nombre del #id</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-12 col-md-6 col-lg-6 card-black">
+                <div class="cb-barra"><span class="circle-red"></span><span class="circle-yellow"></span><span class="circle-green"></span></div>
+                <div class="cb-conten">
+                    <h5>document.querySelectorAll( )</h5>
+                    <div class="CSPSH" lang="js"  theme="monokai">document.querySelector('.clase')
+                        let hola;
+                        let cinco;
+                        let forma;
+                    </div>  
+                    <p>document.querySelector('.clase')<br>// retorna todos los elementos con nombre de la .clase</p>
+                    <p>retorna un nodo con los elementos encontrados </p>
+                    <p>document.querySelector('h1')<br>// retorna todos los elementos h1 del documento.</p>
+                    <p>retorna un nodo con los elementos encontrados </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 card-black">
+                <div class="cb-barra"><span class="circle-red"></span><span class="circle-yellow"></span><span class="circle-green"></span></div>
+                <div class="cb-conten">
+                    <h5>document.getElementById( ) </h5>
+                    <h5> unico elemento | los id son unicos </h5>
+                    <p class="code">document.getElementById('nombreId') </p>
+					<p>retorna primera etiqueta 'h3' del documento</p>
+                    <p>document.getElementById('.clase') </p>
+					<p>retorna la etiqueta con nombre de la .clase</p>
+                    <p>document.getElementById('#id') </p>
+					<p>retorna la etiqueta con nombre del #id</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-12 col-md-6 col-lg-6 card-black">
+                <div class="cb-barra"><span class="circle-red"></span><span class="circle-yellow"></span><span class="circle-green"></span></div>
+                <div class="cb-conten">
+                    <h5>document.getElementById( ) </h5>
+                    <p class="code">document.getElementById('id') </p>
+					<p>elemento.innerHTML // texto del elemento + formato</p>
+					<p>elemento.innerText // texto del elemento sin formato</p>
+					<p>elemento.parentNode // Nodo padre del elemento</p>
+					<p>elemento.style.color = 'blue' // color rojo </p>
+                    <p>elemento.style.textAlign = 'left';</p>
+					<p>document.getElementById('.clase') </p>
+					<p>retorna la etiqueta con nombre de la .clase</p>
+                    <p>document.getElementById('#id') </p>
+					<p>retorna la etiqueta con nombre del #id</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 card-black">
+                <div class="cb-barra"><span class="circle-red"></span><span class="circle-yellow"></span><span class="circle-green"></span></div>
+                <div class="cb-conten">
+                    <h5>document.getElementsByName('name')</h5>
+                    <h5> NodeList(#) | lista elemento del mismo name </h5>
+					<p>...</p>
+					<h5>document.getElementsByTagName('tag')</h5>
+                    <h5> NodeList(#) | lista elemento del mismo name </h5>
+					<p>...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-12 col-md-6 col-lg-6 card-black">
+                <div class="cb-barra"><span class="circle-red"></span><span class="circle-yellow"></span><span class="circle-green"></span></div>
+                <div class="cb-conten">
+                    <h5>document.createElement('p')</h5>
+					<h5> crear elemento y agragarlo con id </h5>
+					<p> let parrafo = document.createElement('p'); </p>
+					<p> let textoP = document.createTextNode('Hola soy el parrafo nuevo !!'); </p>
+					<p> let nuevoE = document.getElementById('crearParrafo'); </p>
+					<p> nuevoE.appendChild(parrafo); </p>
+					<p> parrafo.appendChild(textoP); </p>
+					<div id="crearParrafo">
+					</div>
+					<button type="button" class="btn btn-sm btn-primary" onclick="crearParrafo()" > Crear Parrafo </button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 card-black">
+                <div class="cb-barra"><span class="circle-red"></span><span class="circle-yellow"></span><span class="circle-green"></span></div>
+                <div class="cb-conten">
+                    <h5>document.getElementsByName('name')</h5>
+                    <h5> NodeList(#) | lista elemento del mismo name </h5>
+					<p>...</p>
+					<h5>document.getElementsByTagName('tag')</h5>
+                    <h5> NodeList(#) | lista elemento del mismo name </h5>
+					<p>...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="container">
+    <div class="card">
+      <form  id="" action="" class="card-body">
+        <div class="mb-3 mt-3">
+          <label for="nombre" class="form-label">Nombre:</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" name="nombre">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Tienes Nacionalidad Colombiana ?</label> <br>
+          si <input type="radio" id="rsi" name="colombiano" value="si">
+          no <input type="radio" id="rno" name="colombiano" value="no">
+        </div>
+        <div class="mb-3">
+          <label class="form-label"> ¿ Ganaste la loteria ? </label>
+          <input id="suerte" type="checkbox" name="suerte" value="si"> 
+        </div>
+        <button type="button" class="btn btn-sm btn-primary" onclick='validaForm()'>Validar</button>
+        <button type="button" class="btn btn-sm btn-danger" onclick="limpiar()" >Limpiar</button>
+        <br>
+        <p id="resultado"> </p>
+      </form>
+    </div>
+	</div>
+	<div class="container">
+    <div class="card">
+      <div class="container mt-3">
+        <p>Table</p>            
+        <table id="tabla" class="table table-dark table-hover">
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+              <th>Opciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+              <td> <button type="button" class="bt btn-sm btn-close" onClick='eliminarThis(this)' > </button> Eliminar </td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+              <td> <button type="button" class="bt btn-sm btn-close" onClick='eliminarThis(this)'> </button> Eliminar </td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+              <td> <button type="button" class="bt btn-sm btn-close" onClick='eliminarThis(this)' > </button> Eliminar </td>
+            </tr>
+          </tbody>
+        </table>
+        <button type="button" class="btn btn-primary btn-sm" onclick="agregarFila()">Agregar</button>
+        <button type="button" class="btn btn-danger btn-sm" onclick="eliminarFila()">Eliminar</button>
+    </div>
+    </div>
+	</div>
+
+
+  <div class="container">
+    <canvas id="micanvas" width="200" height="200" style="border:1px solid #000000;">
+    
+    </canvas>
+  </div>
+
+
+
+  </div> <!-- ▓▓▓▓▓▓ End tarjetas  ▓▓▓▓▓▓▓▓-->
+
+
+  <footer>
+    <div id="osSystemBroser">Browser : <span id="browserType"></span> Operating system : <span id="osType"></span> </div> 
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script src="./lib/cspsh/Source/CSPSH.js" type="module"></script>
+  <script src="./js/dom.js"></script>
+  
+  </body>
+</html>
+

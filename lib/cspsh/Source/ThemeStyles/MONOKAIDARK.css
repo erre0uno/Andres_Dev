@@ -1,0 +1,123 @@
+
+/*CSPSH class the whole code block*/
+.CSPSH {
+    text-justify: left;
+    text-align: left;
+}
+
+.MONOKAI {
+    color: #F8F8F2;
+    padding: 0 1rem;
+}
+
+/*Styling the topBar*/
+.copyHolder-MONOKAI {
+    display: none;
+}
+
+.lineCount-MONOKAI {
+    display: none;
+}
+
+code {
+    font-size: 18px;
+    font-family: 'Ubuntu Mono', monospace;
+    border-radius: 10px;
+    line-height: 1;
+    background-color:transparent;
+    padding: 0vh 1rem;
+}
+
+
+::-webkit-scrollbar {
+    background-color: rgba(104, 104, 104, 0.444);
+    border-radius: 10px 10px 10px 10px;
+    width: 0px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(41, 41, 41, 0.75);
+    width: 0.2rem;
+    border-radius: 6px 6px 6px 6px;
+}
+
+
+::-webkit-scrollbar-button {
+    width: 3px;
+    color: rgb(0, 38, 255);
+}
+
+.CSPSH:hover {
+    overflow-y: scroll;
+}
+
+.CSPSH:hover>.copyVector {
+    visibility: visible;
+}
+
+
+.themeUsingmonokai {
+    margin-left: 10vw;
+    color: #f0ffae;
+}
+
+/*End of the top bar css*/
+/* css for types */
+.sh-MONOKAI-types {
+    color: #66D9EF;
+}
+
+/* css for keywords */
+.sh-MONOKAI-keyword {
+    color: #F92672;
+}
+
+/* css for variables */
+.sh-MONOKAI-variable {
+    color: #FD971F;
+    font-style: italic;
+}
+
+/* css for class */
+.sh-MONOKAI-class {
+    color: #A6E22E;
+}
+
+/* css for operators */
+.sh-MONOKAI-operator {
+    color: rgb(167, 167, 167);
+}
+
+/* css for strings and characters */
+.sh-MONOKAI-string {
+    color: #E6DB74;
+}
+
+/* css for numerals */
+.sh-MONOKAI-numerals {
+    color: #AE81FF;
+}
+
+/* css for functions */
+.sh-MONOKAI-Func {
+    color: #FBF46D;
+}
+
+/* css for comments */
+.sh-MONOKAI-comments {
+    color: #75715E;
+    font-style: italic;
+}
+
+/* css for inbuilt fucntions */
+.sh-MONOKAI-inBuilt {
+    color: #66D9EF;
+    font-style: italic;
+}
+
+.sh-MONOKAI-preprocess {
+    color: #F92672;
+    padding: 2px;
+}
+
