@@ -65,7 +65,9 @@
     border-radius: 12px;
     margin: 1rem 0;
     height: 90%;
+    max-height: 300px;
 }
+
 #responsive p {
     text-align: justify;
 }
