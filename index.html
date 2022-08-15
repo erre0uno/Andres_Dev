@@ -2,17 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ErreDev</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/nuevo.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ErreDev</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/nuevo.css">
 
 </head>
 
 <body>
+  
   <header class="header navbar navbar-expand-lg bg-light navbar-sticky">
     <div class="container px-3">
       <a href="index.html" class="navbar-brand pe-3">
@@ -29,7 +30,8 @@
               <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Devweb</a>
               <div class="dropdown-menu p-0">
                 <div class="d-lg-flex">
-                  <div class="mega-dropdown-column bg-position-center bg-repeat-0 bg-size-cover rounded-3 rounded-end-0" style="background-image: url(assets/img/landings.jpg); margin: -1px;"></div>
+                  <div class="mega-dropdown-column bg-position-center bg-repeat-0 bg-size-cover rounded-3 rounded-end-0"
+                    style="background-image: url(assets/img/landings.jpg); margin: -1px;"></div>
                   <div class="mega-dropdown-column pt-lg-3 pb-lg-4">
                     <ul class="list-unstyled mb-0">
                       <li><a href="#" class="dropdown-item">Template Intro Page</a></li>
@@ -59,7 +61,7 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a  href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+              <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
               <div class="dropdown-menu">
                 <div class="d-lg-flex pt-lg-3">
                   <div class="mega-dropdown-column">
@@ -130,14 +132,15 @@
             <i class="bx bx-cart fs-4 lh-1 me-1"></i>
             &nbsp;Buy now
           </a>
-        </div>      
+        </div>
       </div>
       <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
         <input type="checkbox" class="form-check-input" id="theme-mode">
         <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
         <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
       </div>
-      <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <a href="#" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" target="_blank" rel="noopener">
@@ -146,18 +149,75 @@
       </a>
     </div>
   </header> <!-- ▓▓▓▓ End head  ▓▓▓▓▓-->
-      
-  <section>
-    <div class="container ">
-        
-      <div class="ficha">
-          <img src="img/mascara.jpg" alt="Logo" style="width:48px;height: 48px;" class="rounded-circle">
-          <p>Html + Boostrap</p>
-      </div>
 
+  <!-- ▓▓▓▓ HERO  ▓▓▓▓▓-->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1 aos-init aos-animate"
+          data-aos="fade-up" data-aos-delay="200">
+          <h1>Blog Tecnologías de Desarrollo</h1>
+          <h2>El proposito de este blog es compartir conocimiento y algunos apuntes de ayuda.</h2>
+          <div class="d-flex justify-content-center "> <a href="#about"
+              class="btn-get-started scrollto">Get Started</a> <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
+              class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
+          <img src="../img/hero-img.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
   </section>
   
-  
+  <!-- ▓▓▓▓ Fichas  ▓▓▓▓▓-->
+  <section id="fichas" class="">
+      <div class="ficha">
+        <img src="img/logo/html.svg" alt="Logo" class="rounded-circle">
+        <p>Html</p>
+      </div>
+      <div class="ficha">
+        <img src="img/logo/css.svg" alt="Logo" >
+        <p>Css</p>
+      </div><div class="ficha">
+        <img src="img/logo/js.svg" alt="Logo" >
+        <p>JavaScript</p>
+      </div><div class="ficha">
+        <img src="img/logo/jsdom.svg" alt="Logo" >
+        <p>js dom</p>
+      </div>
+      <div class="ficha">
+        <img src="img/logo/c++.svg" alt="Logo" >
+        <p>C++</p>
+      </div>
+      <div class="ficha">
+        <img src="img/logo/java.svg" alt="Logo" >
+        <p>Java</p>
+      </div>
+      <div class="ficha">
+        <img src="img/logo/python.svg" alt="Logo" >
+        <p>Python</p>
+      </div>
+      <div class="ficha">
+        <img src="img/logo/sql2.png" alt="Logo" >
+        <p>Sql</p>
+      </div>
+      <div class="ficha">
+        <img src="img/logo/django.svg" alt="Logo" >
+        <p>Django</p>
+      </div>
+      <div class="ficha">
+        <img src="img/logo/csharp.svg" alt="Logo" >
+        <p>C#</p>
+      </div>
+      <div class="ficha_transparente">
+        <img src="img/logo/csharp.svg" alt="Logo" >
+        <p>C#</p>
+      </div>
+  </section>
+
+
   <div class="container">
     <section class="container">
       <div class="row">
@@ -179,23 +239,26 @@
         </div>
       </div>
     </section>
-    
-    <section id="responsive" class="container" > 
+
+    <section id="responsive" class="container">
       <div class="row">
         <div class="col-md-6">
-            <img src="./img/responsive.jpeg" alt="" class="img-fluid">
+          <img src="./img/responsive.jpeg" alt="" class="img-fluid">
         </div>
 
-        <div class="col-md-6" >
+        <div class="col-md-6">
           <div class="padingtex">
             <h2 class="h3">Web Responsive Desing Tool</h2>
             <a href="#" class="d-table ">Graphic Design</a>
-            <p class="d-md-none d-lg-block pb-3 mb-1 mb-md-1">Malesuada eu cursus natoque purus ipsum nunc, velit cras tellus. Maecenas viverra pellentesque at ultrices purus vitae quis erat volutpat. Turpis auctor neque bibendum id pellentesque ut egestas. Donec ut faucibus nisl nec at purus. Cursus vel gravida gravida purus varius feugiat.Semper mauris id adipiscing est. Nam leo rutrum gravida curabitur at vel risus.</p>
+            <p class="d-md-none d-lg-block pb-3 mb-1 mb-md-1">Malesuada eu cursus natoque purus ipsum nunc, velit cras
+              tellus. Maecenas viverra pellentesque at ultrices purus vitae quis erat volutpat. Turpis auctor neque
+              bibendum id pellentesque ut egestas. Donec ut faucibus nisl nec at purus. Cursus vel gravida gravida purus
+              varius feugiat.Semper mauris id adipiscing est. Nam leo rutrum gravida curabitur at vel risus.</p>
           </div>
         </div>
       </div>
 
-      </section>
+    </section>
     <section id="tools">
       <div class="row">
         <div class="col-12">
@@ -206,16 +269,16 @@
                   CSS TOOLS
                 </a>
               </div>
-              <div id="collapseOne" class="collapse show data-bs-parent="#accordion">
+              <div id="collapseOne" class="collapse show data-bs-parent=" #accordion">
                 <div class="card-body">
-                  
+
                   <div class="row">
                     <div class="col-12 col-lg-4">
                       <article class="post">
                         <a href="toolWaves.html">
                           <h5>css waves animated </h5>
                           <img src="img/web2.png" alt="mascara" width="100%">
-                          <p>texto del articulo donde esta lso porst y los datos de todo el articulo</p>  
+                          <p>texto del articulo donde esta lso porst y los datos de todo el articulo</p>
                         </a>
                       </article>
                     </div>
@@ -223,17 +286,17 @@
                       <article class="post">
                         <h5>css waves animated </h5>
                         <img src="img/web2.png" alt="mascara" width="100%">
-                        <p>texto del articulo donde esta lso porst y los datos de todo el articulo</p>  
+                        <p>texto del articulo donde esta lso porst y los datos de todo el articulo</p>
                       </article>
-    
+
                     </div>
                     <div class="col-12 col-lg-4">
                       <article class="post">
                         <h5>css waves animated </h5>
                         <img src="img/web2.png" alt="mascara" width="100%">
-                        <p>texto del articulo donde esta lso porst y los datos de todo el articulo</p>  
+                        <p>texto del articulo donde esta lso porst y los datos de todo el articulo</p>
                       </article>
-                        </div> 
+                    </div>
                   </div>
 
                 </div>
@@ -242,10 +305,10 @@
           </div>
         </div>
         <div class="clo-12"></div>
-      </div> 
+      </div>
     </section>
 
-    <section  class="container">
+    <section class="container">
       <div class="row">
         <div class="car-cont col-12 col-md-5 col-lg-5">
           <div class="car-img">
@@ -267,162 +330,170 @@
     </section>
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
-        <div class="container-fluid justify-content-center">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="navbar-brand" href="#">
-                        <img src="img/mascara.jpg" alt="Logo" style="width:48px;height:45px;"
-                            class="rounded-pill">
-                    </a>
-                </li>
-            </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="boostrap.html">Html+Bootstrap</a>
-                </li>
-                <li class="nav-item">   
-                    <a class="nav-link" href="css.html">Css</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="blog.html">Blog</a>
-                </li>
-            </ul>
-        </div>
+      <div class="container-fluid justify-content-center">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="navbar-brand" href="#">
+              <img src="img/mascara.jpg" alt="Logo" style="width:48px;height:45px;" class="rounded-pill">
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="boostrap.html">Html+Bootstrap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="css.html">Css</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="blog.html">Blog</a>
+          </li>
+        </ul>
+      </div>
     </nav><!-- ▓▓▓▓ End nav ▓▓▓▓▓-->
     <header>
-        <div id="gradiente_fondo" style="height:50px;">
-            <div class="container">
-                <p>Estamos construyendo el futuro </p> 
-            </div>
+      <div id="gradiente_fondo" style="height:50px;">
+        <div class="container">
+          <p>Estamos construyendo el futuro </p>
         </div>
-        <!-- The slideshow/carousel -->
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="5000">
-                <img src="img/html.jpg" class="d-block w-100" alt="..." style="height:300px;">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="5000">
-                <img src="img/css.png" class="d-block w-100" alt="..." style="height:300px;">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="5000">
-                <img src="img/java.png" class="d-block w-100" alt="..." style="height:300px;">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+      </div>
+      <!-- The slideshow/carousel -->
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
         </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="img/html.jpg" class="d-block w-100" alt="..." style="height:300px;">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="img/css.png" class="d-block w-100" alt="..." style="height:300px;">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="img/java.png" class="d-block w-100" alt="..." style="height:300px;">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </header><!-- ▓▓▓▓ End header ▓▓▓▓▓-->
 
-    <div id="cards_4" class="card-body" style="margin:10px auto" >
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-sm-6 col-md-6 col-lg-3 ">
-                    <div class="card tarjetas" style=" background:#b994f5  ;">
-                        <div class="card-body row">
-                            <div class="col-3">
-                                <img src="img/mascara.jpg" alt="Logo" style="width:48px;height: 48px;" class="rounded-circle">
-                            </div>
-                            <div class="col-9">
-                                <p>Html + Boostrap</p>
-                            </div>
-                        </div>
-                    </div>
+    <div id="cards_4" class="card-body" style="margin:10px auto">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 ">
+            <div class="card tarjetas" style=" background:#b994f5  ;">
+              <div class="card-body row">
+                <div class="col-3">
+                  <img src="img/mascara.jpg" alt="Logo" style="width:48px;height: 48px;" class="rounded-circle">
                 </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-3 ">
-                    <div class="card tarjetas" style="background-image:url(img/gradiente2.png);">
-                        <div class="card-body row">
-                            <div class="col-3">
-                                <img src="img/mascara.jpg" alt="Logo" style="width:48px;height: 48px;" class="rounded-circle">
-                            </div>
-                            <div class="col-9">
-                                <p>Css </p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-9">
+                  <p>Html + Boostrap</p>
                 </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-3 ">
-                    <div class="card tarjetas"  style="background-image: linear-gradient(to top, #346fc9 0%, #df529b 100%);">
-                        <div class="card-body row">
-                            <div class="col-3">
-                                <img src="img/mascara.jpg" alt="Logo" style="width:48px;height: 48px;"                                    class="rounded-circle">
-                            </div>
-                            <div class="col-9">
-                                <p>JavaScript</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-3 ">
-                    <div class="card gradiente1 tarjetas">
-                        <div class="card-body row">
-                            <div class="col-3">
-                                <img src="img/mascara.jpg" alt="Logo" style="width:48px;height: 48px;" class="rounded-circle">
-                            </div>
-                            <div class="col-9">
-                                <p>Notas</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 ">
+            <div class="card tarjetas" style="background-image:url(img/gradiente2.png);">
+              <div class="card-body row">
+                <div class="col-3">
+                  <img src="img/mascara.jpg" alt="Logo" style="width:48px;height: 48px;" class="rounded-circle">
+                </div>
+                <div class="col-9">
+                  <p>Css </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 ">
+            <div class="card tarjetas" style="background-image: linear-gradient(to top, #346fc9 0%, #df529b 100%);">
+              <div class="card-body row">
+                <div class="col-3">
+                  <img src="img/mascara.jpg" alt="Logo" style="width:48px;height: 48px;" class="rounded-circle">
+                </div>
+                <div class="col-9">
+                  <p>JavaScript</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 ">
+            <div class="card gradiente1 tarjetas">
+              <div class="card-body row">
+                <div class="col-3">
+                  <img src="img/mascara.jpg" alt="Logo" style="width:48px;height: 48px;" class="rounded-circle">
+                </div>
+                <div class="col-9">
+                  <p>Notas</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div><!-- ▓▓▓▓ End cards ▓▓▓▓▓-->
 
-    <div  id="parrafos" class="container">
-        <div class="row">
-            <div class="col-4">
-                <h3>Titulo Uno </h3>
-                <h7>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem cum sapiente id dignissimos eos fugiat, facilis tempore aperiam neque optio, animi laboriosam maxime quaerat voluptatem accusantium mollitia dolore? Saepe, minima. </h7>
-                <img src="img/mascara.jpg" alt="mascara" width="100px">
-            </div>
-            <div class="col-4">
-                <h3>Titulo Uno </h3>
-                <h7>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem cum sapiente id dignissimos eos fugiat, facilis tempore aperiam neque optio, animi laboriosam maxime quaerat voluptatem accusantium mollitia dolore? Saepe, minima. </h7>
-                <img src="img/mascara.jpg" alt="mascara" width="100px">
-            </div>
-            <div class="col-4">
-                <h3>Titulo Uno </h3>
-                <h7>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem cum sapiente id dignissimos eos fugiat, facilis tempore aperiam neque optio, animi laboriosam maxime quaerat voluptatem accusantium mollitia dolore? Saepe, minima. </h7>
-                <img src="img/mascara.jpg" alt="mascara" width="100px">
-            </div>
+    <div id="parrafos" class="container">
+      <div class="row">
+        <div class="col-4">
+          <h3>Titulo Uno </h3>
+          <h7>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem cum sapiente id dignissimos eos fugiat,
+            facilis tempore aperiam neque optio, animi laboriosam maxime quaerat voluptatem accusantium mollitia dolore?
+            Saepe, minima. </h7>
+          <img src="img/mascara.jpg" alt="mascara" width="100px">
         </div>
+        <div class="col-4">
+          <h3>Titulo Uno </h3>
+          <h7>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem cum sapiente id dignissimos eos fugiat,
+            facilis tempore aperiam neque optio, animi laboriosam maxime quaerat voluptatem accusantium mollitia dolore?
+            Saepe, minima. </h7>
+          <img src="img/mascara.jpg" alt="mascara" width="100px">
+        </div>
+        <div class="col-4">
+          <h3>Titulo Uno </h3>
+          <h7>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem cum sapiente id dignissimos eos fugiat,
+            facilis tempore aperiam neque optio, animi laboriosam maxime quaerat voluptatem accusantium mollitia dolore?
+            Saepe, minima. </h7>
+          <img src="img/mascara.jpg" alt="mascara" width="100px">
+        </div>
+      </div>
     </div><!-- ▓▓▓▓ End parrafos ▓▓▓▓▓-->
 
     <footer>
-        <a href="#titulo">Ir al la id=titulo</a>
-        <br>
-        <a href="mailto:nel.andres01@gmail.com">Enviame una Saludo</a>
-        <br>
-        <p>Copyright 2022</p>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-            crossorigin="anonymous"></script>
+      <a href="#titulo">Ir al la id=titulo</a>
+      <br>
+      <a href="mailto:nel.andres01@gmail.com">Enviame una Saludo</a>
+      <br>
+      <p>Copyright 2022</p>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
     </footer><!-- ▓▓▓▓ End footer ▓▓▓▓▓-->
   </div><!-- ▓▓▓▓ End container  ▓▓▓▓-->
 </body>

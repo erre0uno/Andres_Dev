@@ -7,8 +7,6 @@ body {
 }
 */
 
-
-
 h1,h2,h3,h4,h5{
     text-align: center;
 }
@@ -17,7 +15,7 @@ table, th, td {
     border: 1px solid black
 }
 
-/* ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ gradientes  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+/* ▓▓▓▓▓▓▓▓▓▓▓ gradientes  ▓▓▓▓▓▓▓▓▓▓▓▓*/
 
 .gradiente0{
     background-image: linear-gradient(to top, #0250c5 0%, #d43f8d 100%);
@@ -40,17 +38,19 @@ table, th, td {
     font-family:  'Open Sans Medium', sans-serif;
 }
 
-/* ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ trajetas ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+/* ▓▓▓▓▓▓▓▓▓▓▓▓ tarjetas ▓▓▓▓▓▓▓▓▓▓▓▓*/
 .tarjetas{
     margin:10px auto;
     box-shadow: 1px 4px 10px 2px #aaaaaa;
     border: 1px  gray;
 }
 
-/* ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ TOOL CSS tarjetas collapse ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+/* ▓▓▓▓▓▓▓▓▓ TOOL CSS tarjetas collapse ▓▓▓▓▓▓▓▓▓*/
 
+/*--------------------------------------------------------------
+# *EFECTO EN EL OVER TRANSICION!!!!
+--------------------------------------------------------------*/
 
-/*EFECTO EN EL OVER TRANSICION!!!!*/
 .post {
     transition: box-shadow 0.3s ease;
 /*  transition: *propiedad *tiempo transicion *algoritmoAcerleracion(ease,ease-in,ease-in-out,ease-out, linear) ; */
@@ -79,11 +79,213 @@ table, th, td {
     color: black;
 }
 
-.ficha {
+#fichas {
+    background-color: #110017;
+    padding: 0.8rem 0.3rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-evenly;
+
+}
+.ficha {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem 1rem;
+    margin: 0.2rem 0.4rem;
+    background-color: #f3f3f3;
+    border-radius: 20px;
+
+    transition: box-shadow 0.3s ease;
+    border: 3px solid #b9b9b9d0;
+}
+.ficha:hover {
+    box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.3) ;
+}
+
+.ficha img {
+    width: 42px;
+    height: 42px;
 }
 .ficha p {
+    display: flex;
+    text-align: center;
     margin: 0 auto;
+    padding-left: 0.5rem;
+    font-weight: 500;
 }
+
+
+
+.ficha_transparente {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem 1rem;
+  margin: 0.2rem 0.4rem;
+
+  transition: box-shadow 0.3s ease;
+  border: 3px solid #b9b9b9d0;
+  
+  background: rgba(255, 255, 255, .1);
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+.ficha_transparente:hover {
+  box-shadow: 0 0.2rem 0.4rem rgba(255, 255, 255, 0.3) ;
+}
+.ficha_transparente img
+{
+  width: 42px;
+  height: 42px;
+}
+.ficha_transparente p {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  padding-left: 0.5rem;
+  font-weight: 500;
+  color: #f3f3f3;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+    width: 100%;
+    height: 70vh;
+    background: #3639dc;
+  }
+  
+  #hero .container {
+    padding-top: 2.2rem;
+  }
+  
+  #hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+  }
+  
+  #hero h2 {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 50px;
+    font-size: 24px;
+  }
+  
+  #hero .btn-get-started {
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 28px 11px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px 0 0 0;
+    color: #fff;
+    background: #47b2e4;
+  }
+  
+  #hero .btn-get-started:hover {
+    background: #209dd8;
+  }
+  
+  #hero .btn-watch-video {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    margin: 10px 0 0 25px;
+    color: #fff;
+    line-height: 1;
+  }
+  
+  #hero .btn-watch-video i {
+    line-height: 0;
+    color: #fff;
+    font-size: 32px;
+    transition: 0.3s;
+    margin-right: 8px;
+  }
+  
+  #hero .btn-watch-video:hover i {
+    color: #47b2e4;
+  }
+  
+  #hero .animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  }
+  
+  @media (max-width: 991px) {
+    #hero {
+      height: 100vh;
+      text-align: center;
+    }
+  
+    #hero .animated {
+      -webkit-animation: none;
+      animation: none;
+    }
+  
+    #hero .hero-img {
+      text-align: center;
+    }
+  
+    #hero .hero-img img {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #hero h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  
+    #hero h2 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+  
+    #hero .hero-img img {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    #hero .hero-img img {
+      width: 80%;
+    }
+  
+    #hero .btn-get-started {
+      font-size: 16px;
+      padding: 10px 24px 11px 24px;
+    }
+  }
+  
+  @-webkit-keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+  
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+  
+    100% {
+      transform: translateY(-10px);
+    }
+  }
