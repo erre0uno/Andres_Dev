@@ -1,5 +1,6 @@
 
 /* ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ confi initial ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+/* ▄▄▄▄▄▄▄ confi initial ▄▄▄▄▄▄▄*/
 /*
 body {
     max-width: 1200px;
@@ -14,6 +15,7 @@ h1,h2,h3,h4,h5{
 table, th, td {
     border: 1px solid black
 }
+
 
 /* ▓▓▓▓▓▓▓▓▓▓▓ gradientes  ▓▓▓▓▓▓▓▓▓▓▓▓*/
 
@@ -38,135 +40,26 @@ table, th, td {
     font-family:  'Open Sans Medium', sans-serif;
 }
 
-/* ▓▓▓▓▓▓▓▓▓▓▓▓ tarjetas ▓▓▓▓▓▓▓▓▓▓▓▓*/
-.tarjetas{
-    margin:10px auto;
-    box-shadow: 1px 4px 10px 2px #aaaaaa;
-    border: 1px  gray;
-}
-
-/* ▓▓▓▓▓▓▓▓▓ TOOL CSS tarjetas collapse ▓▓▓▓▓▓▓▓▓*/
-
-/*--------------------------------------------------------------
-# *EFECTO EN EL OVER TRANSICION!!!!
---------------------------------------------------------------*/
-
-.post {
-    transition: box-shadow 0.3s ease;
-/*  transition: *propiedad *tiempo transicion *algoritmoAcerleracion(ease,ease-in,ease-in-out,ease-out, linear) ; */
-
-    background-color: rgb(248, 248, 248);
-    margin: 1rem 0;
-    border-radius: 20px;
-    padding: 1rem 0;
-    cursor: pointer;
-    /* max-width: 400px; */
-    border: 2px solid #b9b9b99c;
-}
-.post:hover {
-    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3) ;
-}
-
-.post h5, .post p {
-    margin: 0.8rem;
-} 
-.post h5 {
-    text-align:center;
-    font-size: 25px;
-}
-.post a {
-    text-decoration: none;
-    color: black;
-}
-
-#fichas {
-    background-color: #110017;
-    padding: 0.8rem 0.3rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-
-}
-.ficha {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.3rem 1rem;
-    margin: 0.2rem 0.4rem;
-    background-color: #f3f3f3;
-    border-radius: 20px;
-
-    transition: box-shadow 0.3s ease;
-    border: 3px solid #b9b9b9d0;
-}
-.ficha:hover {
-    box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.3) ;
-}
-
-.ficha img {
-    width: 42px;
-    height: 42px;
-}
-.ficha p {
-    display: flex;
-    text-align: center;
-    margin: 0 auto;
-    padding-left: 0.5rem;
-    font-weight: 500;
+/* ▓▓▓▓▓▓▓▓▓▓▓▓ NAV ▓▓▓▓▓▓▓▓▓▓▓▓*/
+.navbar a{
+  font-weight: 480;
 }
 
 
-
-.ficha_transparente {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.3rem 1rem;
-  margin: 0.2rem 0.4rem;
-
-  transition: box-shadow 0.3s ease;
-  border: 3px solid #b9b9b9d0;
-  
-  background: rgba(255, 255, 255, .1);
-  z-index: 1;
-  border: 1px solid rgba(255, 255, 255, .25);
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-}
-.ficha_transparente:hover {
-  box-shadow: 0 0.2rem 0.4rem rgba(255, 255, 255, 0.3) ;
-}
-.ficha_transparente img
-{
-  width: 42px;
-  height: 42px;
-}
-.ficha_transparente p {
-  display: flex;
-  text-align: center;
-  margin: 0 auto;
-  padding-left: 0.5rem;
-  font-weight: 500;
-  color: #f3f3f3;
-}
-
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
+/* ▓▓▓▓▓▓▓▓▓▓▓▓ Hero Section ▓▓▓▓▓▓▓▓▓▓▓▓*/
 #hero {
     width: 100%;
-    height: 70vh;
+    height: 72vh;
     background: #3639dc;
   }
   
   #hero .container {
-    padding-top: 2.2rem;
+    padding-top: 3rem;
   }
   
   #hero h1 {
     margin: 0 0 10px 0;
-    font-size: 48px;
+    font-size: 50px;
     font-weight: 700;
     line-height: 56px;
     color: #fff;
@@ -220,19 +113,23 @@ table, th, td {
   
   #hero .animated {
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
-  }
+}
   
   @media (max-width: 991px) {
     #hero {
-      height: 100vh;
+      height: 90vh;
       text-align: center;
     }
-  
-    #hero .animated {
-      -webkit-animation: none;
-      animation: none;
+    #hero .container {
+      padding-top: 0rem;
     }
-  
+
+    #hero h1 {
+      font-size: 42px;
+    }
+    #hero h2 {
+      font-size: 20px;
+    }
     #hero .hero-img {
       text-align: center;
     }
@@ -240,9 +137,48 @@ table, th, td {
     #hero .hero-img img {
       width: 50%;
     }
+    #hero .container {
+      padding-top: 0.5rem;
+    }
+    #hero h2 {
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+    
+    /* ▄▄▄▄▄▄▄ ficahs ▄▄▄▄▄▄▄*/
+
+    #fichas .ficha {
+      padding: 0.2rem 1rem;
+      border: 2px solid #b9b9b9d0;
+    }
+    #fichas .ficha img {
+      width: 35px;
+      height: 35px;
+    }
+    #fichas .ficha p {
+      font: size 10px; 
+    }
+
+    #fichas .ficha_transparente {
+      padding: 0.2rem 1rem;
+      border: 2px solid #b9b9b9d0;
+    }
+    #fichas .ficha_transparente img {
+      width: 35px;
+      height: 35px;
+    }
+    #fichas .ficha_transparente p {
+      font: size 10px; 
+    }
+
   }
   
   @media (max-width: 768px) {
+    
+    #hero .container {
+      padding-top: 0.5rem;
+    }
+
     #hero h1 {
       font-size: 28px;
       line-height: 36px;
@@ -260,14 +196,40 @@ table, th, td {
   }
   
   @media (max-width: 575px) {
-    #hero .hero-img img {
-      width: 80%;
+    #hero .container {
+      padding-top: 0.5rem;
     }
-  
+
+    #hero .hero-img img {
+      width: 70%;
+    }
+
+    #hero h1 {
+      font-size: 30px;
+    }
+    #hero h2 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+      padding: 0 1rem;
+    }
+
     #hero .btn-get-started {
       font-size: 16px;
       padding: 10px 24px 11px 24px;
     }
+
+    /* ▄▄▄▄▄▄▄ ficahs ▄▄▄▄▄▄▄*/
+
+    #fichas .ficha {
+      margin: 0.2rem 0.2rem;
+      border: 1px solid #b9b9b9d0;
+    }
+    #fichas .ficha_transparente {
+      padding: 0.2rem 1rem;
+      border: 1px solid #b9b9b9d0;
+    }
+
   }
   
   @-webkit-keyframes up-down {
@@ -289,3 +251,158 @@ table, th, td {
       transform: translateY(-10px);
     }
   }
+
+  /* ▓▓▓▓▓▓▓▓▓▓▓▓ fichas ▓▓▓▓▓▓▓▓▓▓▓▓*/
+
+#fichas {
+  background-color: #5a2469;
+  padding: 0.8rem 0.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+.ficha {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem 1rem;
+  margin: 0.3rem 0.4rem;
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  transition: box-shadow 0.3s ease;
+  border: 2px solid #b9b9b9d0;
+}
+.ficha:hover {
+  box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.3) ;
+}
+.ficha a {
+  display: flex;
+  text-decoration: none;
+  color: #1f1f1f;
+  align-items: center;
+
+}
+.ficha a:hover {
+  color: #0d6efd;
+}
+
+.ficha_transparente a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+
+}
+.ficha_transparente a:hover {
+  color: #0d6efd;
+}
+
+.ficha img {
+  width: 42px;
+  height: 42px;
+}
+
+.ficha p {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  padding-left: 0.5rem;
+  font-weight: 500;
+}
+
+.ficha_transparente {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+padding: 0.3rem 1rem;
+margin: 0.2rem 0.4rem;
+
+transition: box-shadow 0.3s ease;
+border: 2px solid #7b7b7bd0;
+
+background: rgba(255, 255, 255, .1);
+z-index: 1;
+border-radius: 20px;
+backdrop-filter: blur(10px);
+}
+.ficha_transparente:hover {
+box-shadow: 0 0.2rem 0.4rem rgba(255, 255, 255, 0.3) ;
+}
+.ficha_transparente img
+{
+width: 42px;
+height: 42px;
+}
+.ficha_transparente p {
+display: flex;
+text-align: center;
+margin: 0 auto;
+padding-left: 0.5rem;
+font-weight: 500;
+color: #f3f3f3;
+}
+
+/* ▓▓▓▓▓▓▓▓▓▓▓▓ tarjetas ▓▓▓▓▓▓▓▓▓▓▓▓*/
+.tarjetas{
+  margin:10px auto;
+  box-shadow: 1px 4px 10px 2px #aaaaaa;
+  border: 1px  gray;
+}
+
+/* ▄▄▄▄▄▄▄ TOOL CSS tarjetas collapse ▄▄▄▄▄▄▄*/
+.post {
+  transition: box-shadow 0.3s ease;
+/*  transition: *propiedad *tiempo transicion *algoritmoAcerleracion(ease,ease-in,ease-in-out,ease-out, linear) ; */
+
+  background-color: rgb(248, 248, 248);
+  margin: 1rem 0;
+  border-radius: 20px;
+  padding: 1rem 0;
+  cursor: pointer;
+  /* max-width: 400px; */
+  border: 2px solid #b9b9b99c;
+}
+.post:hover {
+  box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3) ;
+}
+
+.post h5, .post p {
+  margin: 0.8rem;
+} 
+.post h5 {
+  text-align:center;
+  font-size: 25px;
+}
+.post a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ Footer ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+
+footer {
+  background-color: #3d3939;
+  padding: 1.5rem ;
+  color: white;
+}
+footer section {
+  float: right;
+}
+
+/*en este caso se deja el margen ya que auda a tener un espacio abajo
+ya que lo que se floto tine dos lineas esa linea del p ayuda a dar simetria*/
+/*
+footer p {
+  margin: 0;
+}
+*/
+footer a {
+  transition: color 0.3s ease;
+  color:wheat;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color:cornflowerblue;
+}

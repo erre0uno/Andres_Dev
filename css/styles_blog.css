@@ -56,31 +56,4 @@ section article h5 {
     text-align:center;
     font-size: 25px;
 }
-/* ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ Footer ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
-
-footer {
-    background-color: #3d3939;
-    padding: 1.5rem ;
-    color: white;
-}
-footer section {
-    float: right;
-}
-
-/*en este caso se deja el margen ya que auda a tener un espacio abajo
-ya que lo que se floto tine dos lineas esa linea del p ayuda a dar simetria*/
-/*
-footer p {
-    margin: 0;
-}
-*/
-footer a {
-    transition: color 0.3s ease;
-    color:wheat;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color:cornflowerblue;
-}
 
