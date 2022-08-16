@@ -115,142 +115,7 @@ table, th, td {
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
   
-  @media (max-width: 991px) {
-    #hero {
-      height: 90vh;
-      text-align: center;
-    }
-    #hero .container {
-      padding-top: 0rem;
-    }
 
-    #hero h1 {
-      font-size: 42px;
-    }
-    #hero h2 {
-      font-size: 20px;
-    }
-    #hero .hero-img {
-      text-align: center;
-    }
-  
-    #hero .hero-img img {
-      width: 50%;
-    }
-    #hero .container {
-      padding-top: 0.5rem;
-    }
-    #hero h2 {
-      margin-bottom: 20px;
-      font-size: 22px;
-    }
-    
-    /* ▄▄▄▄▄▄▄ ficahs ▄▄▄▄▄▄▄*/
-
-    #fichas .ficha {
-      padding: 0.2rem 1rem;
-      border: 2px solid #b9b9b9d0;
-    }
-    #fichas .ficha img {
-      width: 35px;
-      height: 35px;
-    }
-    #fichas .ficha p {
-      font: size 10px; 
-    }
-
-    #fichas .ficha_transparente {
-      padding: 0.2rem 1rem;
-      border: 2px solid #b9b9b9d0;
-    }
-    #fichas .ficha_transparente img {
-      width: 35px;
-      height: 35px;
-    }
-    #fichas .ficha_transparente p {
-      font: size 10px; 
-    }
-
-  }
-  
-  @media (max-width: 768px) {
-    
-    #hero .container {
-      padding-top: 0.5rem;
-    }
-
-    #hero h1 {
-      font-size: 28px;
-      line-height: 36px;
-    }
-  
-    #hero h2 {
-      font-size: 18px;
-      line-height: 24px;
-      margin-bottom: 30px;
-    }
-  
-    #hero .hero-img img {
-      width: 70%;
-    }
-  }
-  
-  @media (max-width: 575px) {
-    #hero .container {
-      padding-top: 0.5rem;
-    }
-
-    #hero .hero-img img {
-      width: 70%;
-    }
-
-    #hero h1 {
-      font-size: 30px;
-    }
-    #hero h2 {
-      font-size: 18px;
-      line-height: 24px;
-      margin-bottom: 30px;
-      padding: 0 1rem;
-    }
-
-    #hero .btn-get-started {
-      font-size: 16px;
-      padding: 10px 24px 11px 24px;
-    }
-
-    /* ▄▄▄▄▄▄▄ ficahs ▄▄▄▄▄▄▄*/
-
-    #fichas .ficha {
-      margin: 0.2rem 0.2rem;
-      border: 1px solid #b9b9b9d0;
-    }
-    #fichas .ficha_transparente {
-      padding: 0.2rem 1rem;
-      border: 1px solid #b9b9b9d0;
-    }
-
-  }
-  
-  @-webkit-keyframes up-down {
-    0% {
-      transform: translateY(10px);
-    }
-  
-    100% {
-      transform: translateY(-10px);
-    }
-  }
-  
-  @keyframes up-down {
-    0% {
-      transform: translateY(10px);
-    }
-  
-    100% {
-      transform: translateY(-10px);
-    }
-  }
 
   /* ▓▓▓▓▓▓▓▓▓▓▓▓ fichas ▓▓▓▓▓▓▓▓▓▓▓▓*/
 
@@ -405,4 +270,150 @@ footer a {
 
 footer a:hover {
   color:cornflowerblue;
+}
+
+
+
+/* ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ MEDIA ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+
+@media (max-width: 991px) {
+  #hero {
+    height: 90vh;
+    text-align: center;
+  }
+  #hero .container {
+    padding-top: 0rem;
+  }
+
+  #hero h1 {
+    font-size: 42px;
+  }
+  #hero h2 {
+    font-size: 20px;
+  }
+  #hero .hero-img {
+    text-align: center;
+  }
+
+  #hero .hero-img img {
+    width: 50%;
+  }
+  #hero .container {
+    padding-top: 0.5rem;
+  }
+  #hero h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  
+  /* ▄▄▄▄▄▄▄ fichas ▄▄▄▄▄▄▄*/
+
+  #fichas .ficha {
+    padding: 0.2rem 1rem;
+    border: 2px solid #b9b9b9d0;
+  }
+  #fichas .ficha img {
+    width: 35px;
+    height: 35px;
+  }
+  #fichas .ficha p {
+    font: size 10px; 
+  }
+
+  #fichas .ficha_transparente {
+    padding: 0.2rem 1rem;
+    border: 2px solid #b9b9b9d0;
+  }
+  #fichas .ficha_transparente img {
+    width: 35px;
+    height: 35px;
+  }
+  #fichas .ficha_transparente p {
+    font: size 10px; 
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  #hero {
+    height: 65vh;
+  }
+
+  #hero .container {
+    padding-top: 0.5rem;
+  }
+
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  #hero .hero-img img {
+    width: 55%;
+  }
+}
+
+@media (max-width: 575px) {
+  #hero .container {
+    padding-top: 0.5rem;
+  }
+
+  #hero .hero-img img {
+    width: 60%;
+  }
+
+  #hero h1 {
+    font-size: 28px;
+  }
+  #hero h2 {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 5px;
+    padding: 0 1rem;
+  }
+
+  #hero .btn-get-started {
+    font-size: 16px;
+    padding: 10px 24px 11px 24px;
+  }
+
+  /* ▄▄▄▄▄▄▄ ficahs ▄▄▄▄▄▄▄*/
+
+  #fichas .ficha {
+    padding: 0.15rem 1rem;
+    margin: 0.2rem 0.2rem;
+    border: 1px solid #b9b9b9d0;
+  }
+  #fichas .ficha_transparente {
+    padding: 0.2rem 1rem;
+    border: 1px solid #b9b9b9d0;
+  }
+
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
 }
